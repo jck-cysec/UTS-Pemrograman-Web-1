@@ -98,18 +98,18 @@ Menggunakan parameter:
 ### **II. API Testing (Postman / Bruno)**
 
 #### 🔑 **Login Admin**  
-![API Login Admin](screenshots/api_login_admin.png)
+![API Login Admin](nokenz-game-store/Postmancrud/2.png)
 
 #### 🎮 **Get All Game**  
-![API Get All Game](screenshots/api_get_all_game.png)
+![API Get All Game](nokenz-game-store/Postmancrud/1.png)
 
 #### ➕ **Insert Game**  
-![API Insert Game](screenshots/api_insert_game.png)
+![API Insert Game](nokenz-game-store/Postmancrud/3.png)
 
 #### ✏️ **Update Game**  
-![API Update Game](screenshots/api_update_game.png)
+![API Update Game](nokenz-game-store/Postmancrud/4.png)
 
 #### ❌ **Delete Game**  
-![API Delete Game](screenshots/api_delete_game.png)
+![API Delete Game](nokenz-game-store/Postmancrud/5.png)
 
 ------------------------------------------------------------------------
