@@ -16,6 +16,8 @@ Pemrograman Web 1 (3 SKS)** di **Universitas Teknologi Bandung (UTB)**.
 -   **Kelas:** TIF RP 23 CNS B
 -   **Mahasiswa:** 23552011072 - Haidir Mirza Ahmad Zacky
 
+Proyek Nokenz Game Store ini merupakan aplikasi web toko game sederhana yang menggabungkan frontend responsif dengan backend API berbasis PHP Native. Website ini dirancang untuk memungkinkan pengguna menjelajahi daftar game, melihat detail, melakukan pendaftaran, login, hingga melakukan transaksi pembelian melalui sistem cart dan checkout. Di sisi admin, aplikasi menyediakan fitur CRUD lengkap untuk mengelola data game serta memantau aktivitas pengguna, menjadikannya proyek yang mencakup konsep fundamental pemrograman web modern.
+
 ------------------------------------------------------------------------
 
 ## 🚀 Teknologi yang Digunakan
