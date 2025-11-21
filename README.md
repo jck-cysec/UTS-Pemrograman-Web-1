@@ -1,5 +1,11 @@
 # 🎮 Nokenz Game Store - Tugas UTS Pemrograman Web 1
 
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+![PHP](https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white)
+![Laragon](https://img.shields.io/badge/LocalServer-Laragon-1996EA?style=flat-square&logoColor=white)
+![Postman](https://img.shields.io/badge/API_Testing-Postman-FF6C37?style=flat-square&logo=postman&logoColor=white)
 Proyek ini merupakan implementasi dari Ujian Tengah Semeter (UTS) mata kuliah **Pemrograman Web 1 (3 SKS)** di **Universitas Teknologi Bandung (UTB)**.
 
 * **Dosen Pengampu:** Nova Agustina, S.T., M.Kom.
@@ -124,9 +130,3 @@ Operasi ini memerlukan *session* `role='admin'`.
 
 
 ***
-
-## 🔗 Repository
-
-* **Dibuat oleh:** 23552011072 - Haidir Zacky - TIF RP 23 CNS B
-* **Dosen Pengampu:** Nova Agustina, S.T., M.Kom.
-* **Link Repository GitHub:** `[URL_GITHUB_ANDA]`
