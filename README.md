@@ -1,132 +1,112 @@
-# 🎮 Nokenz Game Store - Tugas UTS Pemrograman Web 1
+# 🎮 Nokenz Game Store - UTS Pemrograman Web 1
 
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
 ![PHP](https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white)
-![Laragon](https://img.shields.io/badge/LocalServer-Laragon-1996EA?style=flat-square&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/Bootstrap_5-7952B3?style=flat-square&logo=bootstrap&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
+![Laragon](https://img.shields.io/badge/LocalServer-Laragon-1996EA?style=flat-square)
 ![Postman](https://img.shields.io/badge/API_Testing-Postman-FF6C37?style=flat-square&logo=postman&logoColor=white)
-Proyek ini merupakan implementasi dari Ujian Tengah Semeter (UTS) mata kuliah **Pemrograman Web 1 (3 SKS)** di **Universitas Teknologi Bandung (UTB)**.
 
-* **Dosen Pengampu:** Nova Agustina, S.T., M.Kom.
-* **Kelas:** TIF RP 23 CNS B
-* **Mahasiswa:** 23552011072 - Haidir Zacky
+Proyek ini merupakan implementasi dari **Ujian Tengah Semester --
+Pemrograman Web 1 (3 SKS)** di **Universitas Teknologi Bandung (UTB)**.
 
-Proyek ini terdiri dari dua bagian utama: Pengembangan **Website Toko Game** dan implementasi **CRUD API** sebagai *backend* data menggunakan PHP dan MySQL.
+-   **Dosen Pengampu:** Nova Agustina, S.T., M.Kom
+-   **Kelas:** TIF RP 23 CNS B
+-   **Mahasiswa:** 23552011072 - Haidir Mirza Ahmad Zacky
 
-***
+------------------------------------------------------------------------
 
 ## 🚀 Teknologi yang Digunakan
 
-| Kategori | Teknologi | Keterangan |
-| :--- | :--- | :--- |
-| **Frontend/Web** | HTML5, CSS3, **JavaScript** | Bahasa dasar pengembangan web. |
-| **CSS Framework** | **Bootstrap 5** | Digunakan untuk desain yang menarik dan responsif. |
-| **Backend API** | **PHP** (Native) | Mengelola *routing* dan logika bisnis melalui `api/api.php`. |
-| **Database** | **MySQL / MariaDB** | Digunakan untuk penyimpanan data Game, User, Order, dll. |
+  -----------------------------------------------------------------------
+  Kategori            Teknologi                Keterangan
+  ------------------- ------------------------ --------------------------
+  **Frontend**        HTML5, CSS3, JavaScript  Tampilan dan interaksi
+                                               Website
 
-***
+  **CSS Framework**   Bootstrap 5              Untuk tampilan UI
+                                               responsif
 
-## 💻 Project 1: Pengembangan Website "Nokenz Game Store"
+  **Backend**         PHP Native               Mengelola logika API
 
-Website ini dikembangkan sesuai kriteria UTS, berinteraksi penuh dengan API **Project 2** sebagai sumber data.
+  **Database**        MySQL / MariaDB          Penyimpanan Data
 
-### Fitur Utama Website (Sesuai Soal Ujian)
+  **API Testing**     Postman / Bruno          Uji semua endpoint API
 
-1.  **Halaman Utama (Home)**: Menampilkan informasi toko, daftar Game, dan Berita Terbaru.
-2.  **Halaman Detail Informasi**: Detail Game/Berita (sesuai pilihan pengguna di Halaman Utama).
-3.  **Halaman Login** (`user/login.php`).
-4.  **Halaman Registrasi** (`user/register.php`).
-5.  **Halaman Menu Utama (Dashboard)**: Tampil setelah user berhasil Login.
+  **Local Server**    Laragon                  Menjalankan PHP & Database
+  -----------------------------------------------------------------------
 
-### Fungsionalitas Kunci Frontend
+------------------------------------------------------------------------
 
-* **Validasi Login (Wajib):** Menggunakan fungsi **JavaScript** dengan **Struktur Percabangan If** untuk validasi input kredensial sebelum memanggil API `/login`.
-* **Interaksi API:** Menggunakan JavaScript `fetch()` untuk semua operasi data (Game, Filter, Cart, Order, dll.).
-* **Footer Kustom:** Semua halaman mencantumkan Footer dengan format wajib: **`@Copyright by 23552011072_HaidirZacky_CNS B`**.
+## 💻 Project 1 - Website "Nokenz Game Store"
 
-***
+Website dibangun menggunakan HTML, CSS, JavaScript, dan Bootstrap 5.
+Semua data diambil dari API.
 
-## 🛠️ Project 2: Dokumentasi CRUD API (PHP Native)
+### 🔑 Fitur Website
 
-API dikembangkan dalam file tunggal **`api/api.php`**. Semua aksi diakses melalui parameter **`?action=...`**.
+-   Halaman Home\
+-   Halaman Detail (Game & Berita)\
+-   Login dengan Validasi JavaScript\
+-   Registrasi\
+-   Dashboard User\
+-   Footer wajib pada semua halaman
 
-### A. Endpoint Autentikasi & User (Wajib Uji)
+------------------------------------------------------------------------
 
-| Action | Metode | Keterangan | Request Body (x-www-form-urlencoded) |
-| :--- | :--- | :--- | :--- |
-| `register` | `POST` | Pendaftaran User baru (role default: 'user'). | `nama`, `email`, `username`, `password` |
-| **`login`** | **`POST`** | Autentikasi User/Admin. | **`username`, `password`** |
-| `logout` | `GET` | Menghapus sesi login. | - |
+## 🛠️ Project 2 - CRUD API (PHP Native)
 
-### B. Endpoint Data Game & Publik
+Semua endpoint berada pada file:
 
-| Action | Metode | Keterangan | Query Parameters |
-| :--- | :--- | :--- | :--- |
-| **`get_games`** | **`GET`** | **READ:** Mendapatkan semua daftar Game. | - |
-| `get_game` | `GET` | Mendapatkan detail Game berdasarkan ID. | `id` |
-| `get_news` | `GET` | Mendapatkan semua daftar Berita. | - |
-| `get_genres` | `GET` | Mendapatkan daftar Genre dari tabel `genres`. | - |
-| `get_platforms` | `GET` | Mendapatkan daftar Platform dari tabel `platforms`. | - |
+    api/api.php
 
-### C. Endpoint CRUD Game (Admin Only - Wajib Uji)
+Menggunakan parameter:
 
-Operasi ini memerlukan *session* `role='admin'`.
+    ?action=<nama_action>
 
-| Action | Metode | Keterangan | Request Body (x-www-form-urlencoded) |
-| :--- | :--- | :--- | :--- |
-| **`insert_game`** | **`POST`** | **CREATE:** Menambahkan Game baru. | `nama_game`, `genre`, `platform`, `harga`, `deskripsi`, `gambar` |
-| `update_game` | `POST` | **UPDATE:** Memperbarui data Game. | `id`, `nama_game`, `genre`, `platform`, `harga`, `deskripsi`, `gambar` |
-| **`delete_game`** | **`POST`** | **DELETE:** Menghapus Game. | **`id`** (Game ID) |
+### Endpoints Utama
 
-### D. Endpoint Cart & Order (User Logged In)
+-   **Autentikasi**: register, login, logout\
+-   **Public Data**: get_games, get_game, get_news, get_genres,
+    get_platforms\
+-   **CRUD Game (Admin)**: insert_game, update_game, delete_game\
+-   **Cart & Order (User)**: add_cart, get_cart, checkout,
+    order_history, payment_confirm
 
-| Action | Metode | Keterangan | Request Body |
-| :--- | :--- | :--- | :--- |
-| `add_cart` | `POST` | Menambahkan Game ke keranjang. | `game_id` |
-| `get_cart` | `GET` | Mendapatkan isi keranjang user. | - |
-| `delete_cart_item` | `POST` | Menghapus item dari keranjang. | `cart_id` |
-| **`checkout`** | **`POST`** | Membuat Order dari Cart, menghitung total, dan menghapus Cart. | - |
-| `payment_confirm` | `POST` | Mengubah status Order menjadi 'paid'. | `order_id`, `method` |
-| `order_history` | `GET` | Riwayat Order User. | - |
+------------------------------------------------------------------------
 
-***
+## 📸 Screenshot Proyek
 
-## 📸 Bukti Pengerjaan (Screenshots)
+### **I. Website**
 
-**(CATATAN: Tempatkan *screenshot* dari Project Web dan hasil uji API dari Postman/Bruno di bawah ini. Pastikan *screenshot* API menunjukkan **Endpoint URL**, **Metode**, **Body Request (untuk POST)**, dan **Response/Status Code**)**
+#### 🏠 **Home**  
+![Home](screenshots/home.png)
 
-### I. Screenshot Proyek Web (Project 1)
+#### 🔐 **Login**  
+![Login](screenshots/login.png)
 
-**A. Halaman Utama Website**
+#### 🧑‍💼 **Dashboard**  
+![Dashboard](screenshots/dashboard.png)
 
+---
 
-**B. Halaman Login dengan Validasi JavaScript**
+### **II. API Testing (Postman / Bruno)**
 
+#### 🔑 **Login Admin**  
+![API Login Admin](screenshots/api_login_admin.png)
 
-**C. Halaman Menu Utama (Dashboard)**
+#### 🎮 **Get All Game**  
+![API Get All Game](screenshots/api_get_all_game.png)
 
+#### ➕ **Insert Game**  
+![API Insert Game](screenshots/api_insert_game.png)
 
-### II. Hasil Uji API (Project 2 - POSTMAN/BRUNO)
+#### ✏️ **Update Game**  
+![API Update Game](screenshots/api_update_game.png)
 
-#### 1. Uji Autentikasi: Login (POST)
-**Endpoint:** `[BASE_URL]/api/api.php?action=login`
+#### ❌ **Delete Game**  
+![API Delete Game](screenshots/api_delete_game.png)
 
-
-#### 2. Uji CRUD: CREATE Game (POST)
-**Endpoint:** `[BASE_URL]/api/api.php?action=insert_game`
-
-
-#### 3. Uji CRUD: READ Game (GET)
-**Endpoint:** `[BASE_URL]/api/api.php?action=get_games`
-
-
-#### 4. Uji Transaksi: Checkout (POST)
-**Endpoint:** `[BASE_URL]/api/api.php?action=checkout`
-
-
-#### 5. Uji CRUD: DELETE Game (POST)
-**Endpoint:** `[BASE_URL]/api/api.php?action=delete_game`
-
-
-***
+------------------------------------------------------------------------
