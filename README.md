@@ -9,7 +9,7 @@
 ![Laragon](https://img.shields.io/badge/LocalServer-Laragon-1996EA?style=flat-square)
 ![Postman](https://img.shields.io/badge/API_Testing-Postman-FF6C37?style=flat-square&logo=postman&logoColor=white)
 
-Proyek ini merupakan implementasi dari **Ujian Tengah Semester --
+Proyek ini merupakan implementasi dari **Ujian Tengah Semester -
 Pemrograman Web 1 (3 SKS)** di **Universitas Teknologi Bandung (UTB)**.
 
 -   **Dosen Pengampu:** Nova Agustina, S.T., M.Kom
@@ -47,11 +47,11 @@ Semua data diambil dari API.
 
 ### 🔑 Fitur Website
 
--   Halaman Home\
--   Halaman Detail (Game & Berita)\
--   Login dengan Validasi JavaScript\
--   Registrasi\
--   Dashboard User\
+-   Halaman Home
+-   Halaman Detail (Game & Berita)
+-   Login dengan Validasi JavaScript
+-   Registrasi
+-   Dashboard User
 -   Footer wajib pada semua halaman
 
 ------------------------------------------------------------------------
