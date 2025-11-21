@@ -1,0 +1,240 @@
+{
+	"info": {
+		"_postman_id": "71985c10-b416-4a49-a564-dd8a382c4dc9",
+		"name": "nokenz_store",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "50186274",
+		"_collection_link": "https://haidirzackyy-5654973.postman.co/workspace/Haidir-Zacky's-Workspace~d0a8bace-54cb-4191-8e84-864bc660f264/collection/50186274-71985c10-b416-4a49-a564-dd8a382c4dc9?action=share&source=collection_link&creator=50186274"
+	},
+	"item": [
+		{
+			"name": "Get All Game",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/nokenz-game-store/api/api.php?action=get_games&id=13",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"nokenz-game-store",
+						"api",
+						"api.php"
+					],
+					"query": [
+						{
+							"key": "action",
+							"value": "get_games"
+						},
+						{
+							"key": "id",
+							"value": "13"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Insert Game",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nama_game",
+							"value": "Mega Man",
+							"type": "text"
+						},
+						{
+							"key": "genre",
+							"value": "Action",
+							"type": "text"
+						},
+						{
+							"key": "platform",
+							"value": "Gameboy",
+							"type": "text"
+						},
+						{
+							"key": "harga",
+							"value": "12000",
+							"type": "text"
+						},
+						{
+							"key": "deskripsi",
+							"value": "mega man shooter game",
+							"type": "text"
+						},
+						{
+							"key": "gambar",
+							"value": "mm.jpg",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/nokenz-game-store/api/api.php?action=insert_game",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"nokenz-game-store",
+						"api",
+						"api.php"
+					],
+					"query": [
+						{
+							"key": "action",
+							"value": "insert_game"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Game",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nama_game",
+							"value": "Mega Man - updated",
+							"type": "text"
+						},
+						{
+							"key": "genre",
+							"value": "Action",
+							"type": "text"
+						},
+						{
+							"key": "platform",
+							"value": "Gameboy",
+							"type": "text"
+						},
+						{
+							"key": "harga",
+							"value": "200000",
+							"type": "text"
+						},
+						{
+							"key": "deskripsi",
+							"value": "mega man shooter game",
+							"type": "text"
+						},
+						{
+							"key": "gambar",
+							"value": "mm2.jpg",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/nokenz-game-store/api/api.php?action=update_game",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"nokenz-game-store",
+						"api",
+						"api.php"
+					],
+					"query": [
+						{
+							"key": "action",
+							"value": "update_game"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login Admin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "admin123",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/nokenz-game-store/api/api.php?action=login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"nokenz-game-store",
+						"api",
+						"api.php"
+					],
+					"query": [
+						{
+							"key": "action",
+							"value": "login"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Game",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "23",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/nokenz-game-store/api/api.php?action=delete_game",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"nokenz-game-store",
+						"api",
+						"api.php"
+					],
+					"query": [
+						{
+							"key": "action",
+							"value": "delete_game"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
