@@ -81,14 +81,17 @@ Menggunakan parameter:
 
 ### **I. Website**
 
-#### 🏠 **Home**  
-![Home](screenshots/home.png)
+#### 🏠 **Landing Page**  
+![Home](nokenz-game-store/UI/1.png)
 
 #### 🔐 **Login**  
-![Login](screenshots/login.png)
+![Login](nokenz-game-store/UI/5.png)
 
+#### 🏠 **Home**  
+![Home](nokenz-game-store/UI/16.png)
+  
 #### 🧑‍💼 **Dashboard**  
-![Dashboard](screenshots/dashboard.png)
+![Dashboard](nokenz-game-store/UI/6.png)
 
 ---
 
